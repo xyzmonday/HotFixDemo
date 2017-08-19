@@ -1,6 +1,6 @@
 # HotFixDemo
 该项目是一个Gradle插件，实现android的热修复
-该项目是在研究Nuwa,Instant-Run等热修复的源码的基础上，通过实现Gradle插件来实现Android的热更新。该项目是个人的研究，主要目的是通过实践加深对Gradle的
+该项目是在研究Nuwa,Instant-Run等热修复的源码的基础上，通过实现Gradle插件来实现Android的热更新。该项目是个人的研究，主要目的是通过实践加深对Gradle(1.5以上)的
 生命周期，Android打包，Groovy编程等基本技能的理解和应用。<br/>
 
 ##热修复的基本原理
