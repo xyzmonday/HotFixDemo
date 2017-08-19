@@ -1,8 +1,8 @@
 # HotFixDemo
 该项目是一个Gradle插件，实现android的热修复
-该项目是在研究Nuwa,Instant-Run等热修复的源码的基础上，通过实现Gradle(1.5以上)插件来实现Android的热更新。该项目是个人的研究，主要目的是通过实践加深对Gradle的生命周期，Android打包，Groovy编程等基本技能的理解和应用。<br/>
+该项目是在研究Nuwa,Instant-Run等热修复的源码的基础上，通过实现Gradle(1.5以上)插件来实现Android的热更新。该项目纯属是个人的研究，主要目的是通过实践加深对Gradle的生命周期，Android打包，Groovy编程等基本技能的理解和应用。<br/>
 
-##热修复的基本原理
+## 热修复的基本原理
 * 1 Instant-Run是Google开发的一个热修复插件，它的基本原理是通过字节码技术，对每一个class生成一个class$change的代理类，当检查某有一个class的方法有修改时，
 那么Instant-Run将对该方法插入一个$overwrite变量。然后在下一个启动时，如果检测到$overwrite不为空，那么将调用改类的代理类即class$change。这样就实现了热修复。
 
