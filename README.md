@@ -3,8 +3,7 @@
 该项目是在研究Nuwa,Instant-Run等热修复的源码的基础上，通过实现Gradle(1.5以上)插件来实现Android的热更新。该项目纯属是个人的研究，主要目的是通过实践加深对Gradle的生命周期，Android打包，Groovy编程等基本技能的理解和应用。<br/>
 
 ## 热修复的基本原理
-* 1 Instant-Run是Google开发的一个热修复插件，它的基本原理是通过字节码技术，对每一个class生成一个class$change的代理类，当检查某有一个class的方法有修改时，
-那么Instant-Run将对该方法插入一个$overwrite变量。然后在下一个启动时，如果检测到$overwrite不为空，那么将调用改类的代理类即class$change。这样就实现了热修复.Robust就是基于该原理。
+* 1 Instant-Run是Google开发的一个热修复插件，它的基本原理是通过字节码技术，对每一个class生成一个class$change的代理类，当检查某有一个class的方法有修改时，那么Instant-Run将对该方法插入一个$overwrite变量。然后在下一个启动时，如果检测到$overwrite不为空，那么将调用改类的代理类即class$change。这样就实现了热修复。Robust就是基于该原理。
 
 * 2 Nuwa是另一个热修复框架，该框架的主要原理是基于QQ控件团队开源的热修复的原理。该原理总结起来就是将补丁包插入到DexElements数组的第一个位置，此外还需要觉接
 的难点就是怎么避开Android系统的校验，也就是如果A类直接或者间接引用B类，而且A类和B类在同一个Dex，那么将报错。针对该问题通过字节码技术，对每一个类直接引用
