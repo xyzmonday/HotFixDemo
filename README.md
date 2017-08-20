@@ -339,6 +339,8 @@ public class HotFixExtension {
    主要过程注释已经说明了，简单说就是过滤掉不符合条件的class,如果符合条件调用**referHackByJavassistWhenInit**方法注入代码。然后计算该文件的hash值，
    通过比较之前的hash值，如果hash值发生了变化，表明该文件需要进行补丁操作，直接将其拷贝到patchDir，后续调用dex命令将其生成patch.jar补丁文件。
    
+   ## 案例效果展示
+  
    ## 总结
    HotFix不建议在项目中使用，因为不支持资源文件，以及so的热修复。但是如果你想分析其他优秀的热修复框架，这是一个不错的学习样本。最后，需要补充的是Gradle的
    调试比较麻烦，而且相比于java或者android开发来说，需要注意很多细小的问题，所以建议自己动手去实践，其实原理说来说去就是那些。目前，我正在考虑将MultiDex原理
