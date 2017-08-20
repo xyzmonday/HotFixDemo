@@ -337,7 +337,7 @@ public class HotFixExtension {
 
    ```
    主要过程注释已经说明了，简单说就是过滤掉不符合条件的class,如果符合条件调用**referHackByJavassistWhenInit**方法注入代码。然后计算该文件的hash值，
-   通过比较之前的hash值，如果hash值发生了变化，表明该文件需要进行补丁操作，直接将其拷贝到patchDir，后续调用dex命令将其生成patch.jar补丁文件。
+   通过比较之前的hash值，如果hash值发生了变化，表明该文件需要进行补丁操作，直接将其拷贝到patchDir，后续调用dex命令将其生成patch.jar补丁文件。<br/>
    
    ## 案例效果展示
   
