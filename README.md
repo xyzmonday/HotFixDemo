@@ -2,15 +2,15 @@
 该项目是一个Gradle插件，实现android的热修复
 该项目是在研究Nuwa,Instant-Run等热修复的源码的基础上，通过实现Gradle(1.5以上)插件来实现Android的热更新。该项目纯属是个人的研究，主要目的是通过实践加深对Gradle的生命周期，Android打包，Groovy编程等基本技能的理解和应用。以下是该Demo所参考的热修复开源框架以及技术文献:<br/>
 
-> https://github.com/jasonross/Nuwa 
-> https://github.com/bunnyblue/DroidFix 
-> https://github.com/Livyli/AndHotFix 
-> https://github.com/AItsuki/HotFix
-> https://github.com/dodola/RocooFix
-> http://blog.csdn.net/sbsujjbcy/article/details/51028027
-> http://blog.csdn.net/u010386612/article/details/51321919
-> http://blog.csdn.net/sbsujjbcy/article/details/50812674
-> http://blog.csdn.net/sbsujjbcy/article/details/50839263
+> https://github.com/jasonross/Nuwa <br/>
+> https://github.com/bunnyblue/DroidFix <br/>
+> https://github.com/Livyli/AndHotFix <br/>
+> https://github.com/AItsuki/HotFix <br/>
+> https://github.com/dodola/RocooFix <br/>
+> http://blog.csdn.net/sbsujjbcy/article/details/51028027 <br/>
+> http://blog.csdn.net/u010386612/article/details/51321919 <br/>
+> http://blog.csdn.net/sbsujjbcy/article/details/50812674 <br/>
+> http://blog.csdn.net/sbsujjbcy/article/details/50839263 <br/>
 
 
 ## 热修复的基本原理
