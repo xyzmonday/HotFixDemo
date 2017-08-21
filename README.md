@@ -11,6 +11,7 @@
 > http://blog.csdn.net/u010386612/article/details/51321919 <br/>
 > http://blog.csdn.net/sbsujjbcy/article/details/50812674 <br/>
 > http://blog.csdn.net/sbsujjbcy/article/details/50839263 <br/>
+> http://www.jianshu.com/p/5f390be47ce8
 
 
 ## 热修复的基本原理
